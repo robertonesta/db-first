@@ -20,14 +20,14 @@
 ## Table Columns
 
 -id             | BIGINT, PRIMARY_KEY, AUTO_INCREMENT, NOTNULL, UNIQUE, INDEX
--brand          | VARCHAR(30), NOTNULLABLE
--model          | VARCHAR(50), NULLABLE
+-brand          | VARCHAR(30), NOTNULLABLE, INDEX
+-model          | VARCHAR(50), NULLABLE,INDEX
 -setup          | VARCHAR(30), NULLABLE
 -fuel           | VARCHAR(30), NOTNULL
 -width          | VARCHAR(10), NULLABLE
 -length         | VARCHAR(10), NULLABLE
 -height         | VARCHAR(10), NULLABLE
--year           | YEAR, NOTNULL
+-year           | YEAR, NOTNULL, INDEX
 -engine size    | SMALLINT, NOTNULL
 -horsepower     | SMALLINT | NOTNULL
 -mileage        | NOTNULL, MEDIUMINT
