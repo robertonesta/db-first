@@ -28,7 +28,7 @@
 -length         | VARCHAR(10), NULLABLE
 -height         | VARCHAR(10), NULLABLE
 -year           | YEAR, NOTNULL, INDEX
--engine size    | SMALLINT, NOTNULL
+-engine_size    | SMALLINT, NOTNULL
 -horsepower     | SMALLINT | NOTNULL
 -mileage        | NOTNULL, MEDIUMINT
 -transmission   | VARCHAR(20) NOTNULL
@@ -39,6 +39,8 @@
 -seats          | TINYINT, NOTNULL
 -doors          | TINYINT, NOTNULL
 -owners         | TINYINT, DEFAULT(1)
--car state      | VARCHAR(30), NOTNULL
+-car_state      | VARCHAR(30), NOTNULL
+-is_available   | TINYINT, DEFAULT (0)
+-emission       | CHAR(5), NULL
 -optional       | TEXT, NULLABLE
 -plate          | CHAR(7), NOTNULL, UNIQUE
